@@ -11,6 +11,9 @@ namespace tp3_taller.Controllers
 {
     public class CadeteController : Controller
     {
+        static int id = 0;
+        static List<Cadete> ListaCadetes = new List<Cadete>();
+
         private readonly ILogger<CadeteController> _logger;
 
         public CadeteController(ILogger<CadeteController> logger)
@@ -27,8 +30,9 @@ namespace tp3_taller.Controllers
         {
             try
             {
-                List<Cadete> ListaCadetes = new List<Cadete>();
+                id++;
                 Cadete MiCadete = new Cadete(nombre, direccion, telefono);
+                MiCadete.AgregarID(id);
 
                 ListaCadetes.Add(MiCadete);
 

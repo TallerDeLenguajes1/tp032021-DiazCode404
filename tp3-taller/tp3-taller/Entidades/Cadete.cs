@@ -7,9 +7,10 @@ namespace tp3_taller.Entidades
 {
     public class Cadete : Persona
     {
-        public Cadete(string nombreCadete, string direccionCadete, string telefonoCadete) : base(nombreCadete,direccionCadete,telefonoCadete)
+        public Cadete(string nombreCadete, string direccionCadete, string telefonoCadete) : base(nombreCadete, direccionCadete,telefonoCadete)
         {
 
         }
+        
     }
 }
