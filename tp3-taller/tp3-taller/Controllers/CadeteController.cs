@@ -4,7 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using tp3_taller.Models;
+
+using tp3_taller.Entidades;
 
 namespace tp3_taller.Controllers
 {
@@ -22,9 +23,22 @@ namespace tp3_taller.Controllers
             return View();
         }
 
-        public List<Cadete> CrearListaCadete(string nombre, string direccion,string telefono)
+        public IActionResult CrearListaCadete(string nombre, string direccion,string telefono)
         {
-            
+            try
+            {
+                List<Cadete> ListaCadetes = new List<Cadete>();
+                Cadete MiCadete = new Cadete(nombre, direccion, telefono);
+
+                ListaCadetes.Add(MiCadete);
+
+                return View(ListaCadetes);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
