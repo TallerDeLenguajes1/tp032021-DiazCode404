@@ -5,10 +5,13 @@
 <div class="text-center">
     <h1 class="display-4">Cadeteria</h1>
     <h2>Agregar Pedidos</h2>
-    <form asp-action="CrearListaCadete" asp-controller="Pedido" method="post">
+    <form asp-action="CrearListaPedidos" asp-controller="Pedido" method="post">
         <label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" /></label>
         <label for="direccion">Direccion: <input type="text" name="direccion" id="direccion" /></label>
         <label for="telefono">Telefono: <input type="text" name="telefono" id="telefono" /></label>
+        <label for="mensaje"></label>
+        <textarea name="telefono" id="telefono" placeholder="mensaje"></textarea>
+
         <input type="submit" name="btnEnviar" value="Crear Cadete" />
     </form>
 

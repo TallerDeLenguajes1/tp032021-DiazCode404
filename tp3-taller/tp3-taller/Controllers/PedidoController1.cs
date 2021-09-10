@@ -21,9 +21,6 @@ namespace tp3_taller.Controllers
             return View();
         }
     
-        public IActionResult CrearListaPedidos()
-        {
-
-        }
+        
     }
 }
