@@ -8,11 +8,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using tp3_taller.Entidades;
 
 namespace tp3_taller
 {
     public class Startup
     {
+        static List<Cadete> ListaCadetes = new List<Cadete>();
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,6 +26,8 @@ namespace tp3_taller
         public void ConfigureServices(IServiceCollection services)
         {
             
+            services.AddSingleton(ListaCadetes);
+
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 

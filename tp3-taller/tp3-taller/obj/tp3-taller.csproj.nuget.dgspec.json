@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\practicaC#\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj": {}
+    "D:\\Repositorios\\Catedra\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\practicaC#\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj": {
+    "D:\\Repositorios\\Catedra\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\practicaC#\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj",
+        "projectUniqueName": "D:\\Repositorios\\Catedra\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj",
         "projectName": "tp3-taller",
-        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\practicaC#\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj",
+        "projectPath": "D:\\Repositorios\\Catedra\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\practicaC#\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\obj\\",
+        "outputPath": "D:\\Repositorios\\Catedra\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

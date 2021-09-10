@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pi1caeGo23Q4o3w40Gfl+3MGnMcUDmjrPPudg70DZIWrwJB2X40FfZPbZ4LnCCeHIZs6vZILw0Ypy/6KWyBtFQ==",
+  "dgSpecHash": "9m3vTszEQ1Eno1tuSN152LVYWaEV0xdTAREYqy70rcBE+n28vSL/jVgI4TRk5fZY2rSKlu5bxKPWdCNpa8BUPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\practicaC#\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj",
+  "projectFilePath": "D:\\Repositorios\\Catedra\\tp032021-DiazCode404\\tp3-taller\\tp3-taller\\tp3-taller.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.9\\microsoft.aspnetcore.mvc.razor.extensions.5.0.9.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.9\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.9.nupkg.sha512",
