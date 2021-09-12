@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<tp3_taller.Entidades.Cadete>
+
+<div class="text-center">
+    <h1 class="display-4">Cadeteria</h1>
+    <h2>Agregar Pedidos</h2>
+    
+    <form asp-action="AltaPedidos" asp-controller="Pedido" method="post">
+        <label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" /></label>
+        <label for="direccion">Direccion: <input type="text" name="direccion" id="direccion" /></label>
+        <label for="telefono">Telefono: <input type="text" name="telefono" id="telefono" /></label>
+        <label for="mensaje"></label>
+        <textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
+        <label for="cade">Cadete:</label>
+        <select id="cade" name="cade">
+            @foreach (var item in Model)
+            {
+                <option value="@item.Id">@item.Nombre</option>//como soluciono el error 
+            }
+        </select>
+        <input type="submit" name="btnEnviar" value="Crear Pedido" />
+    </form>
+</div>
+

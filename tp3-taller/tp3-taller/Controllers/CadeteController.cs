@@ -12,31 +12,30 @@ namespace tp3_taller.Controllers
     public class CadeteController : Controller
     {
         static int id = 0;
-        static List<Cadete> ListaCadetes = new List<Cadete>();
 
         private readonly ILogger<CadeteController> _logger;
-
-        public CadeteController(ILogger<CadeteController> logger)
+        private readonly List<Cadete> cadetes;
+        public CadeteController(ILogger<CadeteController> logger, List<Cadete>Cadetes)
         {
+            cadetes = Cadetes;
             _logger = logger;
             _logger.LogDebug(1, "NLog injected into HomeController");
         }
         public IActionResult Index()
         {
-            return View();
+            return View(cadetes);
         }
 
-        public IActionResult CrearListaCadete(string nombre, string direccion,string telefono)
+        public IActionResult AltaCadete(string nombre, string direccion,string telefono)
         {
             try
             {
                 id++;
                 Cadete MiCadete = new Cadete(nombre, direccion, telefono);
                 MiCadete.AgregarID(id);
+                cadetes.Add(MiCadete);
 
-                ListaCadetes.Add(MiCadete);
-
-                return View(ListaCadetes);
+                return View();
             }
             catch (Exception)
             {

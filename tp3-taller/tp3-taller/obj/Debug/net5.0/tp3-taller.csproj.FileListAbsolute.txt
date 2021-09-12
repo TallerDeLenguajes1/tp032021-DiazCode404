@@ -360,4 +360,7 @@ C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\obj\Debug\net5.0\tp3-taller.pdb
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\obj\Debug\net5.0\tp3-taller.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\obj\Debug\net5.0\Razor\Views\Cadete\Index.cshtml.g.cs
+C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\obj\Debug\net5.0\Razor\Views\Cadete\AltaCadete.cshtml.g.cs
+C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\obj\Debug\net5.0\Razor\Views\Pedido\AltaPedido.cshtml.g.cs
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\obj\Debug\net5.0\Razor\Views\Pedido\Index.cshtml.g.cs
+C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\tp3-taller\bin\Debug\net5.0\Newtonsoft.Json.dll
