@@ -3,6 +3,7 @@
 }
 
 @model List<tp3_taller.Entidades.Cadete>
+<<<<<<< HEAD
  
 <table class="table">
     <thead class="thead-dark">
@@ -25,4 +26,34 @@
         }
 
     </tbody>
+=======
+
+
+<a asp-action="AltaCadete" class="btn-success"> Alta de nuevo cadete </a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id </th>
+                <th scope="row">@item.Nombre </th>
+                <th scope="row">@item.Telefono </th>
+            </tr>
+
+        }
+
+    </tbody>
+
+    
+
+>>>>>>> d27da61527637817c8ce9033175b63001d05ea5e
 </table>

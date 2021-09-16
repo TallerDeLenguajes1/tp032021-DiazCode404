@@ -12,13 +12,23 @@ namespace tp3_taller.Controllers
     public class CadeteController : Controller
     {
         static int id = 0;
+<<<<<<< HEAD
 
         private readonly ILogger<CadeteController> _logger;
         private readonly List<Cadete> cadetes;
         public CadeteController(ILogger<CadeteController> logger, List<Cadete>Cadetes)
+=======
+        
+
+        private readonly ILogger<CadeteController> _logger;
+        private readonly List<Cadete> cadetes;
+
+        public CadeteController(ILogger<CadeteController> logger,List<Cadete> Cadetes)
+>>>>>>> d27da61527637817c8ce9033175b63001d05ea5e
         {
             cadetes = Cadetes;
             _logger = logger;
+            cadetes = Cadetes;
             _logger.LogDebug(1, "NLog injected into HomeController");
         }
         public IActionResult Index()
@@ -30,11 +40,21 @@ namespace tp3_taller.Controllers
         {
             try
             {
+<<<<<<< HEAD
                 id++;
                 Cadete MiCadete = new Cadete(nombre, direccion, telefono);
                 MiCadete.AgregarID(id);
                 cadetes.Add(MiCadete);
 
+=======
+                if (nombre != null)
+                {
+                    id++;
+                    Cadete MiCadete = new Cadete(nombre, direccion, telefono);
+                    MiCadete.AgregarID(id);
+                    cadetes.Add(MiCadete);
+                }
+>>>>>>> d27da61527637817c8ce9033175b63001d05ea5e
                 return View();
             }
             catch (Exception)

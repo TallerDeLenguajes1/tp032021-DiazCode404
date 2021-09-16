@@ -14,7 +14,10 @@ namespace tp3_taller
 {
     public class Startup
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> d27da61527637817c8ce9033175b63001d05ea5e
         static List<Cadete> ListaCadetes = new List<Cadete>();
         public Startup(IConfiguration configuration)
         {
@@ -26,7 +29,13 @@ namespace tp3_taller
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
             services.AddSingleton(ListaCadetes);
+=======
+            
+            services.AddSingleton(ListaCadetes);
+
+>>>>>>> d27da61527637817c8ce9033175b63001d05ea5e
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
