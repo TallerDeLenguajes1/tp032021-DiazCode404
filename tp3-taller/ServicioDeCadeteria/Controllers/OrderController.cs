@@ -28,7 +28,10 @@ namespace ServicioDeCadeteria.Controllers
             "Canceled"
         };
 
-        
+        public IActionResult OrderCreator()
+        {
+            return View();
+        }
 
         //aca se recibiran los datos para crear el pedido
         public IActionResult CreateOrder(string client_name,string client_adress,string client_telephone,string client_order)
@@ -45,7 +48,7 @@ namespace ServicioDeCadeteria.Controllers
 
             _dataBase.OrderList.Add(MyOrder);//aca agrego mis pedidos a la lista de pedidos
 
-            return View();
+            return View("OrderCreator");
         }
 
         public IActionResult OrderViews()
