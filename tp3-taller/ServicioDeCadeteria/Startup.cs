@@ -8,14 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using tp3_taller.Entidades;
 
-namespace tp3_taller
+namespace ServicioDeCadeteria
 {
     public class Startup
     {
-
-        static List<Cadete> ListaCadetes = new List<Cadete>();
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,14 +23,7 @@ namespace tp3_taller
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddSingleton(ListaCadetes);
-
-            
-            services.AddSingleton(ListaCadetes);
-
-
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
