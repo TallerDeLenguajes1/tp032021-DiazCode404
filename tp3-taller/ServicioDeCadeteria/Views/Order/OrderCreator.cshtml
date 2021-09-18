@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>You can place your order here!</h2>
+<!--
+    con toda esta informacion se creara un objeto de tipo OrderClass que se agregara a una lista de pedidos
+    y vamos a extraer parte de estos datos para crear objetos clientes y agregarlos a una lista de clientes
+-->
+<form asp-controller="Order" asp-action="CreateOrder" method="post">
+    <div><!--esta informacion se usara para registrar este cliente en una lista de clientes-->
+        <label for="client_name">Name:<input type="text" id="client_name" name="client_name" required /></label>
+        <label for="client_adress">Adress:<input type="text" id="client_adress" name="client_adress" required/></label>
+        <label for="client_telephone">Telephone Number:<input type="text" id="client_telephone" name="client_telephone" required/></label>
+    </div>
+    <div>
+        <label for="client_order">Please, place your order:</label>
+        <textarea id="client_order" name="client_order" required>i want a sandwich with frites...</textarea>
+    </div>
+    <div>
+        <input type="submit" value="Realizar Pedido" />
+    </div>
+</form>

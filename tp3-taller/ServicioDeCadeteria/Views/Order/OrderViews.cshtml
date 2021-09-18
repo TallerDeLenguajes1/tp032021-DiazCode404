@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!--como desde OrderControler se encio una lista de pedidos debo recibir dicha lista-->
+@model List<ServicioDeCadeteria.Entities.OrderClass>
+
+<table border="1">
+    <tr>
+        <th>Order number</th>
+        <th>Client`s Name</th>
+        <th>Client´s Adress</th>
+        <th>Status</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Order_number</td>
+            <td>@item.Client.Name</td>
+            <td>@item.Client.Adress</td>
+            <td>@item.Order_status</td>
+        </tr>
+    }
+</table>
