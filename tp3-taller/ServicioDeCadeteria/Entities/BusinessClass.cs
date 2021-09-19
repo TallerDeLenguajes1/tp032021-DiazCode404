@@ -11,7 +11,7 @@ namespace ServicioDeCadeteria.Entities
     public class BusinessClass
     {
         private List<OrderClass> orderList;
-
+        private List<DeliveryClass> deliveryManList;
         /*
          * PREGUNTA: ¿PORQUE NO PUEDO USAR ESTE CONSTRUCTOR PARA CREAR LA LISTA DE PEDIDOS?
          * ES PORQUE DEBO PASARLE UNA LISTA?
@@ -25,8 +25,9 @@ namespace ServicioDeCadeteria.Entities
         public BusinessClass()
         {
             orderList = new List<OrderClass>();//de esta forma instancio la lista de pedidos sin necesidad de estar pasandole datos?
+            DeliveryManList = new List<DeliveryClass>();
         }
         public List<OrderClass> OrderList { get => orderList; set => orderList = value; }
-
+        public List<DeliveryClass> DeliveryManList { get => deliveryManList; set => deliveryManList = value; }
     }
 }

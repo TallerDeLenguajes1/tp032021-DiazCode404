@@ -28,7 +28,7 @@ namespace ServicioDeCadeteria.Controllers
             "Canceled"
         };
 
-        public IActionResult OrderCreator()
+        public IActionResult OrderCreator()//DEBO CREAR LA PAGINA QUE QUIERO VISUALIZAR
         {
             return View();
         }
@@ -48,7 +48,7 @@ namespace ServicioDeCadeteria.Controllers
 
             _dataBase.OrderList.Add(MyOrder);//aca agrego mis pedidos a la lista de pedidos
 
-            return View("OrderCreator");
+            return View("OrderCreator");//RETORNO EL NOMBRE DE LA PAGINA A LA QUE ME QUIERO DIRIGIR DESPUES DE CREAR EL PEDIDO
         }
 
         public IActionResult OrderViews()

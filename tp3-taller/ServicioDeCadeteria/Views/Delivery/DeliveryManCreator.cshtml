@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form asp-controller="Delivery" asp-action="CreateDeliveryMan" method="post">
+    <div>
+        <label for="deliveryMan_name">Name:<input type="text" id="deliveryMan_name" name="deliveryMan_name" /></label>
+        <label for="deliveryMan_adress">Adress:<input type="text" id="deliveryMan_adress" name="deliveryMan_adress" /></label>
+        <label for="deliveryMan_telephone">Telephone:<input type="text" id="deliveryMan_telephone" name="deliveryMan_telephone" /></label>
+    </div>
+    <div>
+        <input type="submit" value="Create DeliveryMan" />
+    </div>
+</form>
