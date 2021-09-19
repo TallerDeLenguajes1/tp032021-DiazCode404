@@ -13,13 +13,16 @@
         <th>Adress</th>
         <th>Telephone number</th>
     </tr>
-    <tr>
-        @foreach (var item in Model)
-        {
+    
+    @foreach (var item in Model)
+    {
+        <tr>
             <td>@item.DeliveryMan_id</td>
             <td>@item.DeliveryMan_name</td>
             <td>@item.DeliveryMan_adress</td>
             <td>@item.DeliveryMan_telephone</td>
-        }
-    </tr>
+        </tr>    
+    }
+    
+
 </table>

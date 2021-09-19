@@ -3,6 +3,7 @@
 *@
 @{
 }
+@model List<ServicioDeCadeteria.Entities.DeliveryClass>
 
 <h2>You can place your order here!</h2>
 <!--
@@ -17,7 +18,16 @@
     </div>
     <div>
         <label for="client_order">Please, place your order:</label><br />
-        <textarea id="client_order" name="client_order" required>i want a sandwich with frites...</textarea>
+        <textarea id="client_order" name="client_order" placeholder="i want a sandwich with frites..." required></textarea>
+    </div>
+    <div>
+        <label for="id_delivery">Please,choose a deliery man:</label>
+        <select id="id_delivery" name="id_delivery">
+            @foreach (var item in Model)
+            {
+                <option value="@item.DeliveryMan_id">@item.DeliveryMan_name</option>//de aqui envio el id del delivery para asignarle un pedido
+            }
+        </select>
     </div>
     <div>
         <input type="submit" value="Realizar Pedido" />

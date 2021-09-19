@@ -11,6 +11,7 @@ namespace ServicioDeCadeteria.Entities
         private string order;
         private string order_status;
         private ClientClass client;
+        
 
         public OrderClass(string order_number, string order, string order_status, ClientClass client)
         {
@@ -18,6 +19,7 @@ namespace ServicioDeCadeteria.Entities
             this.Order = order;
             this.Order_status = order_status;
             this.Client = client;
+          //  this.DeliveryMan = deliveryMan;
             //this.Client = new ClientClass(client.Id,client.Name,client.Adress,client.Telephone);
         }
 
@@ -25,5 +27,6 @@ namespace ServicioDeCadeteria.Entities
         public string Order { get => order; set => order = value; }
         public string Order_status { get => order_status; set => order_status = value; }
         public ClientClass Client { get => client; set => client = value; }
+        //public DeliveryClass DeliveryMan { get => deliveryMan; set => deliveryMan = value; }
     }
 }

@@ -30,11 +30,11 @@ namespace ServicioDeCadeteria.Controllers
 
         public IActionResult OrderCreator()//DEBO CREAR LA PAGINA QUE QUIERO VISUALIZAR
         {
-            return View();
+            return View(_dataBase.DeliveryManList);
         }
 
         //aca se recibiran los datos para crear el pedido
-        public IActionResult CreateOrder(string client_name,string client_adress,string client_telephone,string client_order)
+        public IActionResult CreateOrder(string client_name,string client_adress,string client_telephone,string client_order,string id_delivery)
         {
             //creo un objeto cliente
             ClientClass MyClient = new ClientClass(Convert.ToString(idClient), client_name, client_adress, client_telephone);
@@ -42,9 +42,13 @@ namespace ServicioDeCadeteria.Controllers
             idClient++;
 
             //creo un objeto Order
-            OrderClass MyOrder = new OrderClass(Convert.ToString(numberOrder), client_order, TipeOfStatus[1],MyClient);
+            OrderClass MyOrder = new OrderClass(Convert.ToString(numberOrder), client_order, TipeOfStatus[1], MyClient);
             //aumento el numero de pedido para el proximo pedido
             numberOrder++;
+
+            //ahora tengo que buscar si existe el cadete que tiene el id recibido y agregar el pedido en su lista de pedidos
+            _dataBase.DeliveryManList.Find(x => x.DeliveryMan_id == id_delivery).AddOrder(MyOrder);
+
 
             _dataBase.OrderList.Add(MyOrder);//aca agrego mis pedidos a la lista de pedidos
 

@@ -30,6 +30,7 @@ namespace ServicioDeCadeteria.Controllers
 
             //agrego mi cadete creado a la lista de cadetes
             _dataBase.DeliveryManList.Add(MyDeliveryMan);
+            id_deliveryMan++;//aumento el id del cadete
 
             return View("DeliveryManCreator");
         }
