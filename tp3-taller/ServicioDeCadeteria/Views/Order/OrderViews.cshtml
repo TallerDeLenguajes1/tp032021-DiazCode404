@@ -13,10 +13,12 @@
         <th>Client`s Name</th>
         <th>Client´s Adress</th>
         <th>Status</th>
-        <th>DeliveryMan`s name</th>
+        
     </tr>
-    @foreach (var item in Model)
-    {
+    @{
+        
+        foreach (var item in Model)
+        {
         <tr>
             <td>@item.Order_number</td>
             <td>@item.Client.Name</td>
@@ -24,5 +26,8 @@
             <td>@item.Order_status</td>
             
         </tr>
+            
+        }
     }
+    
 </table>

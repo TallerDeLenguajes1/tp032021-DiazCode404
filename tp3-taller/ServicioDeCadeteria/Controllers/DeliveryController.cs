@@ -30,14 +30,19 @@ namespace ServicioDeCadeteria.Controllers
 
             //agrego mi cadete creado a la lista de cadetes
             _dataBase.DeliveryManList.Add(MyDeliveryMan);
+            //escribo el cadete en el archivo
+            _dataBase.SaveDeliveryMan(_dataBase.DeliveryManList);
             id_deliveryMan++;//aumento el id del cadete
+
 
             return View("DeliveryManCreator");
         }
 
         public IActionResult ShowAllDeliveryMan()
         {
-            return View(_dataBase.DeliveryManList);//paso la lista de cadetes para mostrar en la vista ShowAllDeliveryMan
+            //cuando entro a esta vista tengo que hacer la deserializacion de los que contiene el archivo y pasarle el contenido
+            
+            return View(_dataBase.DeserializerDeliveryManList());//paso la lista de cadetes para mostrar en la vista ShowAllDeliveryMan
         }
 
 

@@ -363,3 +363,5 @@ C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\ServicioDeCadeteria\obj\Debug\net5.0\Razor\Views\Order\OrderCreator.cshtml.g.cs
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\ServicioDeCadeteria\obj\Debug\net5.0\Razor\Views\Delivery\DeliveryManCreator.cshtml.g.cs
 C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\ServicioDeCadeteria\obj\Debug\net5.0\Razor\Views\Delivery\ShowAllDeliveryMan.cshtml.g.cs
+C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\ServicioDeCadeteria\bin\Debug\net5.0\DB\DeliveryMan.json
+C:\Users\Usuario\OneDrive\Escritorio\practicaC#\tp032021-DiazCode404\tp3-taller\ServicioDeCadeteria\bin\Debug\net5.0\DB\OrderList.json
