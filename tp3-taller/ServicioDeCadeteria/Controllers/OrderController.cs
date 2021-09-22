@@ -18,9 +18,9 @@ namespace ServicioDeCadeteria.Controllers
             _dataBase = dataBase;
         }
         
-        static int idClient = 100;//
+        public int idClient = 100;//
 
-        static int numberOrder = 0;//creo el numero del pedido para enviarlo luego
+        public int numberOrder = 0;//creo el numero del pedido para enviarlo luego
         public List<string> TipeOfStatus = new List<string>()//creo una lista de los estados de los pedidos
         {
             "Done",
@@ -38,13 +38,19 @@ namespace ServicioDeCadeteria.Controllers
             //sumo aumento el id del cliente para el proximo cliente
             idClient++;
 
+            
             //creo un objeto Order
             OrderClass MyOrder = new OrderClass(Convert.ToString(numberOrder), client_order, TipeOfStatus[1], MyClient);
             //aumento el numero de pedido para el proximo pedido
             numberOrder++;
 
             //ahora tengo que buscar si existe el cadete que tiene el id recibido y agregar el pedido en su lista de pedidos
-            _dataBase.DeliveryManList.Find(x => x.DeliveryMan_id == id_delivery).AddOrder(MyOrder);
+            _dataBase.DeserializerDeliveryManList().Find(x => x.DeliveryMan_id == id_delivery).AddOrder(MyOrder);
+
+            string identDel = _dataBase.DeserializerDeliveryManList().Find(x => x.DeliveryMan_id == id_delivery).DeliveryMan_id;
+            string NameDel = _dataBase.DeserializerDeliveryManList().Find(x => x.DeliveryMan_id == id_delivery).DeliveryMan_name;
+            MyOrder.AddDelivery(identDel, NameDel);
+           // _dataBase.DeliveryManList.Find(x => x.DeliveryMan_id == id_delivery).AddOrder(MyOrder);
 
 
             _dataBase.OrderList.Add(MyOrder);//aca agrego mis pedidos a la lista de pedidos
@@ -61,7 +67,7 @@ namespace ServicioDeCadeteria.Controllers
 
         public IActionResult OrderCreator()//DEBO CREAR LA PAGINA QUE QUIERO VISUALIZAR
         {
-            return View(_dataBase.DeliveryManList);
+            return View(_dataBase.DeserializerDeliveryManList());
         }
     }
 }

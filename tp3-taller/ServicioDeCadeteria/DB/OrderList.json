@@ -1,13 +1,15 @@
 [
   {
     "Order_number": "0",
-    "Order": "frites",
+    "Order": "fritas",
     "Order_status": "InProcess",
     "Client": {
       "Id": "100",
-      "Name": "dat",
+      "Name": "Day",
       "Adress": "siempre viva 123",
-      "Telephone": "123"
-    }
+      "Telephone": "999"
+    },
+    "DeliveryId": "10",
+    "DeliveryName": "Exequiel Diaz"
   }
 ]

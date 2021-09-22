@@ -11,16 +11,18 @@
     y vamos a extraer parte de estos datos para crear objetos clientes y agregarlos a una lista de clientes
 -->
 <form asp-controller="Order" asp-action="CreateOrder" method="post">
-    <div><!--esta informacion se usara para registrar este cliente en una lista de clientes-->
+    <div>
+        <!--esta informacion se usara para registrar este cliente en una lista de clientes-->
         <label for="client_name">Name:<input type="text" id="client_name" name="client_name" required /></label>
-        <label for="client_adress">Adress:<input type="text" id="client_adress" name="client_adress" required/></label>
-        <label for="client_telephone">Telephone Number:<input type="text" id="client_telephone" name="client_telephone" required/></label>
+        <label for="client_adress">Adress:<input type="text" id="client_adress" name="client_adress" required /></label>
+        <label for="client_telephone">Telephone Number:<input type="text" id="client_telephone" name="client_telephone" required /></label>
     </div>
     <div>
         <label for="client_order">Please, place your order:</label><br />
         <textarea id="client_order" name="client_order" placeholder="i want a sandwich with frites..." required></textarea>
     </div>
-    <div>
+    
+        <div>
         <label for="id_delivery">Please,choose a deliery man:</label>
         <select id="id_delivery" name="id_delivery">
             @foreach (var item in Model)
@@ -29,6 +31,8 @@
             }
         </select>
     </div>
+    
+
     <div>
         <input type="submit" value="Realizar Pedido" />
     </div>

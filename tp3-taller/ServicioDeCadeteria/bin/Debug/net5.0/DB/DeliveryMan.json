@@ -1,9 +1,16 @@
 [
   {
     "DeliveryMan_id": "10",
-    "DeliveryMan_name": "susana",
-    "DeliveryMan_adress": "asd",
-    "DeliveryMan_telephone": "asd",
+    "DeliveryMan_name": "Exequiel Diaz",
+    "DeliveryMan_adress": "Congreso",
+    "DeliveryMan_telephone": "123",
+    "DeliveryMan_orderList": []
+  },
+  {
+    "DeliveryMan_id": "11",
+    "DeliveryMan_name": "Gabriela Juarez",
+    "DeliveryMan_adress": "perez",
+    "DeliveryMan_telephone": "345",
     "DeliveryMan_orderList": []
   }
 ]

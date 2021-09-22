@@ -13,6 +13,10 @@ namespace ServicioDeCadeteria.Entities
         private string deliveryMan_telephone;
         private List<OrderClass> deliveryMan_orderList;
 
+        public DeliveryClass()
+        {
+        }
+
         public DeliveryClass(string deliveryMan_id, string deliveryMan_name, string deliveryMan_adress, string deliveryMan_telephone)
         {
             this.DeliveryMan_id = deliveryMan_id;
