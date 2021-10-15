@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Cadeteria.Entidades.ClasePedidos>
+
+<table border="1">
+    <tr>
+        <th>Id pedido</th>
+        <th>pedido</th>
+        <th>Id cliente</th>
+        <th>estado</th>
+        <th>Ver Pedido</th>
+        <th>Cambiar Estado</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id_pedido</td>
+            <td>@item.Pedido</td>
+            <td>@item.Cliente.Id_cliente</td>
+            <td>@item.Estado</td>
+            <td><button asp-controller="Pedido" asp-action="Info" name="id" value="@item.Id_pedido">Ver</button></td>
+            
+        </tr>
+    }
+
+</table>

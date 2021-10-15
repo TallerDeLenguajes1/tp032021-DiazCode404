@@ -12,8 +12,10 @@
         <th>Order number</th>
         <th>Client`s Name</th>
         <th>Client´s Adress</th>
+        <th>DeliveryMan`s Id</th>
+        <th>DeliveryMan`s Name</th>
         <th>Status</th>
-        
+        <th></th>
     </tr>
     @{
         
@@ -23,7 +25,12 @@
             <td>@item.Order_number</td>
             <td>@item.Client.Name</td>
             <td>@item.Client.Adress</td>
+            <td>@item.DeliveryId</td>
+            <td>@item.DeliveryName</td>
             <td>@item.Order_status</td>    
+            <td>
+                <input value="Change Status" type="submit" />
+            </td>
         </tr>
             
         }

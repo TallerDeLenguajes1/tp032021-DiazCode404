@@ -18,9 +18,9 @@ namespace ServicioDeCadeteria.Controllers
             _dataBase = dataBase;
         }
         
-        public int idClient = 100;//
+        static int idClient = 100;//
 
-        public int numberOrder = 0;//creo el numero del pedido para enviarlo luego
+        static int numberOrder = 0;//creo el numero del pedido para enviarlo luego
         public List<string> TipeOfStatus = new List<string>()//creo una lista de los estados de los pedidos
         {
             "Done",

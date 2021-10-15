@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tp3-taller", "tp3-taller\tp3-taller.csproj", "{A1F459B5-062E-4B47-B362-8A65C1E0430D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioDeCadeteria", "ServicioDeCadeteria\ServicioDeCadeteria.csproj", "{B5993E8A-D211-412A-BF2E-7AA31D55ACE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicioDeCadeteria", "ServicioDeCadeteria\ServicioDeCadeteria.csproj", "{B5993E8A-D211-412A-BF2E-7AA31D55ACE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicioDeCadeteriaII", "ServicioDeCadeteriaII\ServicioDeCadeteriaII.csproj", "{9932DEAE-4F6C-4063-A673-8BC751DB0490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadeteria", "Cadeteria\Cadeteria.csproj", "{12F20B70-54FF-4545-A7F4-1C4866D6B0E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{B5993E8A-D211-412A-BF2E-7AA31D55ACE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5993E8A-D211-412A-BF2E-7AA31D55ACE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5993E8A-D211-412A-BF2E-7AA31D55ACE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9932DEAE-4F6C-4063-A673-8BC751DB0490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9932DEAE-4F6C-4063-A673-8BC751DB0490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9932DEAE-4F6C-4063-A673-8BC751DB0490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9932DEAE-4F6C-4063-A673-8BC751DB0490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F20B70-54FF-4545-A7F4-1C4866D6B0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F20B70-54FF-4545-A7F4-1C4866D6B0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F20B70-54FF-4545-A7F4-1C4866D6B0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F20B70-54FF-4545-A7F4-1C4866D6B0E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

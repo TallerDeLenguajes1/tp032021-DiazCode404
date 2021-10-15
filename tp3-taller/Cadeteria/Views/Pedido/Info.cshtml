@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Cadeteria.Entidades.ClasePedidos
+
+<form>
+    <fieldset>
+        <legend>Datos del pedido</legend>
+        <p>id: @Model.Id_pedido</p><br />
+        <p>pedido: @Model.Pedido</p><br />
+        <p>estado: @Model.Estado</p><br />
+    </fieldset>
+    
+    <fieldset>
+        <legend>Datos del cliente</legend>
+        <p>id: @Model.Cliente.Id_cliente</p>
+        <p>Apellido y Nombre: @Model.Cliente.Apellido_cliente @Model.Cliente.Nombre_cliente</p>
+        <p>Domicilio: @Model.Cliente.Domicilio_cliente</p>
+        <p>Telefono: @Model.Cliente.Telefono_cliente</p>
+    </fieldset>
+</form>
