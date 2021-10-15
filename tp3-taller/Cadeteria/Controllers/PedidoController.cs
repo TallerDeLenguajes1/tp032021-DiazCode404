@@ -38,5 +38,16 @@ namespace Cadeteria.Controllers
             var pedido = _dataBase.LeerArchivoDePedidos().Find(x => x.Id_pedido == id);
             return View(pedido);
         }
+        public IActionResult cambiarEstado(string id, string estado)
+        {
+            var reemplazo = _dataBase.LeerArchivoDePedidos().Find(x => x.Id_pedido == id);
+            reemplazo.Estado = estado;
+            _dataBase.GuardarPedido(reemplazo);
+
+            var pedidoAeliminar = _dataBase.LeerArchivoDePedidos().Find(x => x.Id_pedido == id);
+            _dataBase.LeerArchivoDePedidos().Remove(pedidoAeliminar);
+
+            return RedirectToAction("VerPedidos");
+        }
     }
 }

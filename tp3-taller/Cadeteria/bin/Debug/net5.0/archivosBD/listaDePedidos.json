@@ -1,3 +1,1 @@
-{"Id_pedido":"1","Estado":"EnCamino","Cliente":{"Id_cliente":"1","Apellido_cliente":"Milei","Nombre_cliente":"Javier","Domicilio_cliente":"libre","Telefono_cliente":"6666666"},"Pedido":"un zurdo a las brazas"}
-{"Id_pedido":"2","Estado":"EnCamino","Cliente":{"Id_cliente":"2","Apellido_cliente":"vidal","Nombre_cliente":"eugenia","Domicilio_cliente":"bs as","Telefono_cliente":"12312312321"},"Pedido":"ahora si gobernamos"}
-{"Id_pedido":"3","Estado":"EnCamino","Cliente":{"Id_cliente":"3","Apellido_cliente":"santoro","Nombre_cliente":"leandro","Domicilio_cliente":"zurdolandia","Telefono_cliente":"98687"},"Pedido":"ah pero macri"}
+{"Id_pedido":"1","Estado":"EnCamino","Cliente":{"Id_cliente":"1","Apellido_cliente":"robin","Nombre_cliente":"r","Domicilio_cliente":"asd","Telefono_cliente":"123"},"Pedido":"asdasda"}

@@ -71,8 +71,8 @@ namespace Cadeteria.Entidades
         /**********PEDIDOS********/
         enum estado
         {
-            entregado,
-            cancelado,
+            Entregado,
+            Cancelado,
             EnCamino
         }
         public void crearPedido(string apellido_cliente, string nombre_cliente, string domicilio_cliente, string telefono_cliente, string pedido)
@@ -90,7 +90,7 @@ namespace Cadeteria.Entidades
             if (!File.Exists(path_pedidos))
             {
                 Directory.CreateDirectory(carpetaArchivos);
-                StreamWriter archivo = File.CreateText(path_pedidos);
+                StreamWriter archivo = File.AppendText(path_pedidos);
                 archivo.Close();
                 archivo.Dispose();
             }

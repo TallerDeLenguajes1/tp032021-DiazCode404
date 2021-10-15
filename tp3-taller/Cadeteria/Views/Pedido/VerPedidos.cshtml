@@ -10,9 +10,11 @@
         <th>Id pedido</th>
         <th>pedido</th>
         <th>Id cliente</th>
-        <th>estado</th>
-        <th>Ver Pedido</th>
+        <th>estado actual</th>
         <th>Cambiar Estado</th>
+        <th>Ver Pedido</th>
+
+
     </tr>
     @foreach (var item in Model)
     {
@@ -21,8 +23,22 @@
             <td>@item.Pedido</td>
             <td>@item.Cliente.Id_cliente</td>
             <td>@item.Estado</td>
-            <td><button asp-controller="Pedido" asp-action="Info" name="id" value="@item.Id_pedido">Ver</button></td>
-            
+            <td>
+                <form asp-controller="Pedido" asp-action="cambiarEstado" method="post">
+                    <select name="estado">
+                        <option value="EnCamino">En Camino</option>
+                        <option value="Entregado">Entregado</option>
+                        <option value="Cancelado">Cancelado</option>
+                    </select>
+                    <input type="text" name="id" value="@item.Id_pedido" hidden />
+                    <button type="submit">Guardar</button>
+                </form>
+            </td>
+            <td>
+                <form asp-controller="Pedido" asp-action="Info" method="post">
+                    <input type="text" name="id" value="@item.Id_pedido" hidden/><button type="submit">ver</button>
+                </form>
+            </td>
         </tr>
     }
 
